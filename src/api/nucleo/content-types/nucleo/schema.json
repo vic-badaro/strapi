@@ -1,0 +1,20 @@
+{
+  "kind": "collectionType",
+  "collectionName": "nucleos",
+  "info": {
+    "singularName": "nucleo",
+    "pluralName": "nucleos",
+    "displayName": "Núcleo",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Titulo": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

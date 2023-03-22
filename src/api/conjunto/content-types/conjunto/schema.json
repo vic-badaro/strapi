@@ -1,0 +1,19 @@
+{
+  "kind": "collectionType",
+  "collectionName": "conjuntos",
+  "info": {
+    "singularName": "conjunto",
+    "pluralName": "conjuntos",
+    "displayName": "Conjuntos"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Titulo": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

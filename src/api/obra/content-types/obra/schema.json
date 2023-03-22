@@ -1,0 +1,121 @@
+{
+  "kind": "collectionType",
+  "collectionName": "obras",
+  "info": {
+    "singularName": "obra",
+    "pluralName": "obras",
+    "displayName": "Obras",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Numero": {
+      "type": "integer",
+      "required": true,
+      "unique": true
+    },
+    "Tango": {
+      "type": "integer"
+    },
+    "Nucleo": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::nucleo.nucleo"
+    },
+    "Tema": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::tema.tema"
+    },
+    "Titulo": {
+      "type": "string",
+      "required": false
+    },
+    "Titulo_original": {
+      "type": "string"
+    },
+    "Imagem": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "Documento": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "files"
+      ]
+    },
+    "Video": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "videos"
+      ]
+    },
+    "Resumo": {
+      "type": "text"
+    },
+    "Autoria": {
+      "type": "string"
+    },
+    "Data": {
+      "type": "string"
+    },
+    "Assuntos": {
+      "type": "string"
+    },
+    "Pessoas_relacionadas": {
+      "type": "string"
+    },
+    "Dimensoes": {
+      "type": "string"
+    },
+    "Especie_formato_documental": {
+      "type": "enumeration",
+      "enum": [
+        "Artigo jornalístico",
+        "Decreto e ofício",
+        "Depoimento",
+        "Desenho",
+        "Discurso",
+        "Ensaio",
+        "Entrevista",
+        "Fotografia",
+        "Objeto",
+        "Obra de arte",
+        "Planta e projeto",
+        "Publicação",
+        "Vídeo",
+        "Convite"
+      ]
+    },
+    "Genero_documental": {
+      "type": "enumeration",
+      "enum": [
+        "Audiovisual",
+        "Digital",
+        "Iconográfico",
+        "Sonoro",
+        "Textual",
+        "Peça gráfica"
+      ]
+    },
+    "Acervo": {
+      "type": "string"
+    },
+    "conjunto": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::conjunto.conjunto"
+    }
+  }
+}
