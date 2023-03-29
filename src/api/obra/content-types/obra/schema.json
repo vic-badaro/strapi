@@ -116,6 +116,10 @@
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::conjunto.conjunto"
+    },
+    "Slug": {
+      "type": "string",
+      "required": true
     }
   }
 }
