@@ -53,14 +53,6 @@
         "files"
       ]
     },
-    "Video": {
-      "type": "media",
-      "multiple": false,
-      "required": false,
-      "allowedTypes": [
-        "videos"
-      ]
-    },
     "Resumo": {
       "type": "text"
     },
@@ -119,6 +111,20 @@
     },
     "Slug": {
       "type": "string",
+      "required": true
+    },
+    "Video": {
+      "type": "string"
+    },
+    "Tipo": {
+      "type": "enumeration",
+      "enum": [
+        "Documento",
+        "Imagem",
+        "Vídeo",
+        "Link"
+      ],
+      "default": "Imagem",
       "required": true
     }
   }
